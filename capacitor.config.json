@@ -1,0 +1,32 @@
+{
+  "appId": "com.example.app",
+  "appName": "task1",
+  "webDir": "dist",
+  "ios": {
+    "scheme": "App",
+    "path": "ios"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "launchAutoHide": false,
+      "backgroundColor": "#1A202C",
+      "showSpinner": false
+    },
+    "SafeArea": {
+      "enabled": true,
+      "customColorsForSystemBars": true,
+      "statusBarBackgroundColor": "#1A202C",
+      "statusBarTextColor": "light",
+      "navigationBarBackgroundColor": "#1A202C",
+      "navigationBarTextColor": "light"
+    },
+    "FirebaseAuthentication": {
+      "skipNativeAuth": false,
+      "providers": [
+        "google.com",
+        "apple.com"
+      ]
+    }
+  }
+}
