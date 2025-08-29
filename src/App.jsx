@@ -22,6 +22,7 @@ import EnhancedCategories from "./components/EnhancedCategories"; // Add enhance
 import ReviewsGrid from "./pages/ReviewsGrid";
 import UsersList from "./pages/UsersList";
 import EnhancedLayout from "./components/EnhancedLayout";
+import { ShakeDetectionDemo } from "./components/ShakeDetectionDemo";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -66,6 +67,7 @@ const App = () => (
                       <Route path="/crawler" element={<div>Web Crawler Page</div>} />
                       <Route path="/notifications" element={<div>Notifications Page</div>} />
                       <Route path="/settings" element={<div>Settings Page</div>} />
+                      <Route path="/shake-demo" element={<ShakeDetectionDemo />} />
                       <Route path="/users" element={<UsersList />} />
                       <Route path="*" element={<Navigate to="/dashboard" />} />
                     </Routes>
